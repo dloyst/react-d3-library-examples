@@ -69,7 +69,7 @@ const createBarChart = data => {
 	    .attr("y", 6)
 	    .attr("dy", ".71em")
 	    .style("text-anchor", "end")
-	    .text(data.yAxisLabel);
+	    .text(data.y_display_name);
 
 	// bind user data to rectangles that will be appended to svg
 	svg.selectAll("bar")

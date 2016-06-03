@@ -66,7 +66,7 @@ const createLineChart = data => {
         .attr("y", 6)
         .attr("dy", ".71em")
         .style("text-anchor", "end")
-        .text(data.YAxisLabel);
+        .text(data.y_display_name);
 
     svg.append("path")
         .datum(dataset)

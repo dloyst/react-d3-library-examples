@@ -1,7 +1,6 @@
 import React from 'react';
 import node from './../d3-examples/barChart';
 import rd3 from 'react-d3-library';
-
 const BarChart = rd3.BarChart;
 
 module.exports = React.createClass({
