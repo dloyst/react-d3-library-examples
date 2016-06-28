@@ -1,8 +1,8 @@
 import React from 'react';
 import node from './../d3-examples/binaryTree';
 import rd3 from 'react-d3-library';
-
 const RD3Component = rd3.Component;
+
 
 module.exports = React.createClass({
 
