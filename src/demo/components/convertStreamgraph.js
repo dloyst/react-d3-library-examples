@@ -1,7 +1,7 @@
 import React from 'react';
 import node from './../d3-examples/streamgraph';
-import D3StateContainer from './d3Components/Component';
-import ReactDOM from 'react-dom';
+import rd3 from 'react-d3-library';
+const RD3Container = rd3.Component;
 
 module.exports = React.createClass({
 
@@ -16,7 +16,7 @@ module.exports = React.createClass({
   render: function() {
     return (
       <div>
-        <D3StateContainer data={this.state.d3} />
+        <RD3Container data={this.state.d3} />
       </div>
     )
   }
