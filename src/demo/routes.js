@@ -45,7 +45,7 @@ module.exports = (
       <Route path='pieChart' component={PieChart} />
       <Route path='scatterPlot' component={ScatterPlot} />
       <Route path='areaChart' component={AreaChart} />
-      <Route path='lineChart' component={LineChart} />
+      <Route path='lineChart' element={LineChart} />
       <Route path='chainedTransitions' component={ChainedTransitions} />
       <Route path='rainDrops' component={RainDrops} />
       <Route path='particles' component={Particles} />
