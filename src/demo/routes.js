@@ -11,7 +11,7 @@ var MergeSort = require('./components/convertMergeSort');
 var RoundedRectangles = require('./components/convertRoundedRectangles');
 var CongressionalDistricts = require('./components/convertCongressionalDistricts');
 var CalendarView = require('./components/convertCalendarView');
-var BarChartComponent = require('./components/convertBarChart');
+import convertBarChart from './components/convertBarChart';
 var PieChart = require('./components/convertPieChart');
 var ScatterPlot = require('./components/convertScatterPlot');
 var AreaChart = require('./components/convertAreaChart');
@@ -41,7 +41,7 @@ module.exports = (
       <Route path='roundedRectangles' component={RoundedRectangles} />
       <Route path='congressionalDistricts' component={CongressionalDistricts} />
       <Route path='calendarView' component={CalendarView} />
-      <Route path='barChartComponent' component={BarChartComponent} />
+      <Route path='barChartComponent' component={ convertBarChart } />
       <Route path='pieChart' component={PieChart} />
       <Route path='scatterPlot' component={ScatterPlot} />
       <Route path='areaChart' component={AreaChart} />
