@@ -1,23 +1,25 @@
 import React from 'react';
 import node from './../d3-examples/barChart';
 import rd3 from 'react-d3-library';
-const BarChart = rd3.BarChart;
+import BarChart from './d3Components/BarChart';
 
-module.exports = React.createClass({
+// export default class extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = { d3: '' };
+//   }
 
-  getInitialState: function() {
-    return {d3: ''}
-  },
+//   componentDidMount() {
+//     this.setState({ d3: node });
+//   }
 
-  componentDidMount: function() {
-    this.setState({d3: node});
-  },
+//   render() {
+//     return (
+//       <div>
+//         <BarChart data={this.state.d3} />
+//       </div>
+//     )
+//   }
+// };
 
-  render: function() {
-    return (
-      <div>
-        <BarChart data={this.state.d3} />
-      </div>
-    )
-  }
-});
+export default () => <div><BarChart data={node} /></div>
